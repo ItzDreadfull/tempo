@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unimi - Premium Farm Fresh Products</title>
+    <link rel="shortcut icon" type="image/x-icon" href="/Unimi_logo.jpg">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <header>
+        <nav class="container">
+            <div class="logo">
+                <img src="./Unimi_logo.jpg" alt="Logo">
+            </div>
+            <ul class="nav-links">
+                <!-- <li><a href="#home">Home</a></li> -->
+                <li><a href="#products">Products</a></li>
+                <li><a href="#BeOurPartner">Be Our Partner</a></li>
+                <li><a href="#about">About</a></li>
+                <!-- <li><a href="#contact">Contact</a></li> -->
+            </ul>
+        </nav>
+    </header>
+
+
+    <section id="home-alt" class="hero-alt">
+        <div class="overlay"></div>
+
+        <div class="content split">
+            <!-- Left Side: Rotating Text + CTA -->
+            <div class="text-area">
+                <h1 class="rotating-headline">
+                    <span>Pure</span>
+                    <span>Creamy</span>
+                    <span>Wholesome</span>
+                    <span>Unimi</span>
+                </h1>
+                <p class="subtitle">
+                    From pasture to plate, savor every drop of our handcrafted dairy delights.
+                </p>
+                <div class="cta">
+                    <a href="#shop" class="cta-button">Explore Products</a>
+                </div>
+            </div>
+
+            <!-- Right Side: Video with Mute/Unmute Control -->
+            <div class="media-area">
+                <video id="hero-video" src="PROMO.mp4" poster="images/dd.jpg" autoplay muted loop playsinline></video>
+                <button id="video-toggle" aria-label="Toggle Sound">🔇</button>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- <section id="home" class="hero">
+        
+        <div class="container split">
+            <!-- Left Side: Animated Brand Text + CTAs 
+            <div class="hero-left">
+                <h1 class="animated-text">Farm Fresh<br />Excellence</h1>
+                <p class="hero-subtitle">
+                    Experience the purest dairy products from our sustainable farm to your family table.
+                </p>
+                <div class="cta-buttons">
+                    <a href="#products" class="cta-button">Shop Now</a>
+                    <a href="#about" class="cta-button secondary">Our Story</a>
+                </div>
+            </div>
+
+            <!-- Right Side: Video 
+            <div class="hero-right">
+                <video src="videos/hero-video.mp4" autoplay muted loop playsinline></video>
+            </div>
+        </div>
+    </section> -->
+
+    <section class="stats">
+        <h2 class="section-title fade-in">Our Product Categorys</h2>
+        <div class="container">
+            <div class="stats-container fade-in">
+                <div class="stat-item">
+                    <a href="category1.php">
+                        <img src="Unimi_logo.jpg" alt="category1"></a>
+                    <!-- <span class="stat-number">50+</span>
+                    <span class="stat-label">Years of Excellence</span> -->
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">10K+</span>
+                    <span class="stat-label">Happy Families</span>
+                </div>
+                <div class="stat-item">
+                    <a href="category3.php">
+                        <img src="Unimi_logo.jpg" alt="category3"></a>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">24/7</span>
+                    <span class="stat-label">Fresh Delivery</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="products" class="products">
+        <div class="container">
+            <h2 class="section-title fade-in">Premium Products</h2>
+            <p class="section-subtitle fade-in">Discover our range of artisanal dairy products, each crafted with the
+                finest ingredients and traditional methods.</p>
+            <div class="products-grid">
+                <div class="product-card fade-in">
+                    <div class="product-icon">🥛</div>
+                    <h3>Fresh Whole Milk</h3>
+                    <p>Creamy, rich milk from grass-fed cows. Packed with natural nutrients and unmatched freshness.</p>
+                    <div class="product-price">₹35/0.5ml</div>
+                    <button class="product-button">View Details</button>
+                </div>
+                <div class="product-card fade-in">
+                    <div class="product-icon">🧀</div>
+                    <h3>Cheese</h3>
+                    <p>Hand-crafted aged cheeses with complex flavors. From mild to sharp, each variety is a
+                        masterpiece.</p>
+                    <div class="product-price">₹60/lb</div>
+                    <button class="product-button">View Details</button>
+                </div>
+                <div class="product-card fade-in">
+                    <div class="product-icon">🧈</div>
+                    <h3>Churned Butter</h3>
+                    <p>Silky smooth butter churned fresh daily. Perfect for cooking, baking, or spreading on warm bread.
+                    </p>
+                    <div class="product-price">₹80/lb</div>
+                    <button class="product-button">View Details</button>
+                </div>
+                <div class="product-card fade-in">
+                    <div class="product-icon">🍦</div>
+                    <h3>Premium Ice Cream</h3>
+                    <p>Indulgent ice cream made with our fresh cream. Available in seasonal and classic flavors.</p>
+                    <div class="product-price">₹50</div>
+                    <button class="product-button">View Details</button>
+                </div>
+                <div class="product-card fade-in">
+                    <div class="product-icon">🥤</div>
+                    <h3>Yogurt</h3>
+                    <p>Thick, creamy yogurt packed with probiotics. Available in various flavors and sizes.</p>
+                    <div class="product-price">₹20/0.2gm</div>
+                    <button class="product-button">View Details</button>
+                </div>
+                <div class="product-card fade-in">
+                    <div class="product-icon">🍼</div>
+                    <h3>Heavy Cream</h3>
+                    <p>Rich, velvety cream perfect for cooking, coffee, and desserts. Always fresh and delicious.</p>
+                    <div class="product-price">₹60.99/pint</div>
+                    <button class="product-button">View Details</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text fade-in">
+                    <h2>Our Heritage</h2>
+                    <p>For three generations, the Johnson family has been dedicated to producing the finest dairy
+                        products in the region. What began as a small family farm has grown into a trusted name
+                        synonymous with quality and sustainability.</p>
+                    <p>We believe in treating our animals with respect, caring for our land responsibly, and delivering
+                        products that nourish families while supporting our local community.</p>
+                    <div class="about-features">
+                        <div class="feature-item">
+                            <div class="feature-icon">🌱</div>
+                            <span>100% Organic</span>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">🐄</div>
+                            <span>Happy Cows</span>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">♻️</div>
+                            <span>Sustainable</span>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">❤️</div>
+                            <span>Family Owned</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-visual fade-in">
+                    <div class="about-main-icon">🐄</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- marquee tag for scrolling horizontal image -->
+    <section>
+        <div class="image-slider">
+            <div class="slider-track">
+                <img src="Unimi_logo.jpg" alt="Image 1">
+                <img src="Unimi_logo.jpg" alt="Image 2">
+                <img src="Unimi_logo.jpg" alt="Image 3">
+                <img src="Unimi_logo.jpg" alt="Image 4">
+
+                <!-- Add more images as needed -->
+            </div>
+        </div>
+    </section>
+
+    <section id="testimonials" class="testimonials">
+        <div class="container">
+            <h2 class="section-title fade-in">What Our Customers Say</h2>
+            <div class="testimonials-grid">
+                <div class="testimonial-card fade-in">
+                    <p class="testimonial-text">"The quality is unmatched! My family has been buying from Pure Meadow
+                        for years, and we wouldn't go anywhere else."</p>
+                    <div class="testimonial-author">Sarah Mitchell</div>
+                    <div class="testimonial-role">Local Family</div>
+                </div>
+                <div class="testimonial-card fade-in">
+                    <p class="testimonial-text">"As a chef, I demand the best ingredients. Pure Meadow's dairy products
+                        elevate every dish I create."</p>
+                    <div class="testimonial-author">Chef Marcus Rodriguez</div>
+                    <div class="testimonial-role">Restaurant Owner</div>
+                </div>
+                <div class="testimonial-card fade-in">
+                    <p class="testimonial-text">"Their commitment to sustainability and animal welfare makes me feel
+                        good about every purchase."</p>
+                    <div class="testimonial-author">Emma Thompson</div>
+                    <div class="testimonial-role">Environmental Advocate</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- acchivement -->
+    <section class="achievements">
+        <h2 class="section-title fade-in">We at a Glance</h2>
+        <p class="section-subtitle fade-in">Our Accreditations, Affiliations & Supporters</p>
+
+        <div class="achievement-grid">
+            <div class="achievement-card">
+                <img src="images/bis-logo.png" alt="Bureau of Indian Standards">
+                <p>Affiliated by Bureau of Indian Standards</p>
+            </div>
+            <div class="achievement-card ">
+                <img src="images/startup-india-logo.png" alt="Startup India">
+                <p>Affiliated by #StartupIndia</p>
+            </div>
+            <div class="achievement-card ">
+                <img src="images/msme-logo.png" alt="MSME">
+                <p>Affiliated by MSME</p>
+            </div>
+            <div class="achievement-card ">
+                <img src="images/iso-logo.png" alt="ISO Certified">
+                <p>ISO 9001:2015 Certified Company</p>
+            </div>
+            <div class="achievement-card ">
+                <img src="images/qib-logo.png" alt="Quality in Business">
+                <p>Quality in Business Accredited</p>
+            </div>
+            <div class="achievement-card ">
+                <img src="images/itc-logo.png" alt="International Trade Council">
+                <p>Member of International Trade Council</p>
+            </div>
+            <div class="achievement-card ">
+                <img src="images/refinery-logo.png" alt="Refinery Support">
+                <p>Refinery Support</p>
+            </div>
+            <div class="achievement-card ">
+                <img src="images/assay-logo.png" alt="Assay Support">
+                <p>Assay Support</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title fade-in">Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-form fade-in">
+                    <h3>Send us a message</h3>
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" name="subject" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="cta-button">Send Message</button>
+                    </form>
+                </div>
+                <div class="contact-info fade-in">
+                    <h3>Visit Our Farm</h3>
+                    <div class="contact-item">
+                        <div class="contact-icon">📍</div>
+                        <div>
+                            <strong>Address</strong><br>
+                            456 Meadow Lane, Green Valley, CA 95123
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">📞</div>
+                        <div>
+                            <strong>Phone</strong><br>
+                            (555) 987-6543
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">✉️</div>
+                        <div>
+                            <strong>Email</strong><br>
+                            hello@puremeadowdairy.com
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">🕒</div>
+                        <div>
+                            <strong>Farm Store Hours</strong><br>
+                            Mon-Sat: 7AM - 7PM<br>
+                            Sunday: 9AM - 5PM
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <footer>
+        <!-- 1. Logo at top center -->
+        <div class="footer-top-logo">
+            <div class="logo-pill">
+                <img src="Unimi_logo.jpg" alt="Unimi Logo" title="Unimi Logo" />
+            </div>
+        </div>
+
+        <!-- 2. Main footer columns -->
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Unimi Care</h3>
+                <p>General query</p>
+                <p>📞 1800-102-4774 (Toll Free)</p>
+                <p>📧 care@unimi.in</p>
+                <p>Consumer Support</p>
+                <p>📞 087-9120-9120</p>
+                <p>Partner Support</p>
+                <p>📞 087-9130-9130</p>
+            </div>
+            <div class="footer-section">
+                <h3>Company Details</h3>
+                <p><a href="#about">About Us</a></p>
+                <p><a href="#contact">Contact Us</a></p>
+                <p><a href="#retail">Retail Outlet</a></p>
+                <p><a href="#blog">Blog</a></p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Link</h3>
+                <p><a href="#terms">Term & Conditions</a></p>
+                <p><a href="#privacy">Privacy Policy</a></p>
+                <p><a href="#faq">F.A.Q.</a></p>
+            </div>
+        </div>
+
+
+        <!-- 3. Bottom bar -->
+        <div class="footer-bottom">
+            <p>&copy; 2024 &amp; All rights reserved : Unimi Verse Pvt. Ltd.</p>
+            <div class="credit">
+                <p style="text-align: right;">Powered by <a href="#" target="_blank" rel="noopener">ItzDreadfull
+                        Industries</a></p>
+            </div>
+        </div>
+    </footer>
+
+
+    <Script src="./script.js"></Script>
+</body>
+
+</html>
