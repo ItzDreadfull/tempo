@@ -77,7 +77,6 @@ nav {
 
 /* Hero Section */
 /* Hero Container */
-/* Container and Overlay (unchanged) */
 .hero-alt {
     position: relative;
     height: 100vh;
@@ -94,7 +93,7 @@ nav {
     mix-blend-mode: multiply;
 }
 
-/* Split Layout (unchanged) */
+/* Split Layout */
 .content.split {
     position: relative;
     width: 100%;
@@ -114,7 +113,7 @@ nav {
     justify-content: center;
 }
 
-/* Rotating Headline (unchanged) */
+/* Rotating Headline */
 .rotating-headline {
     font-size: 3rem;
     font-weight: 700;
@@ -167,7 +166,7 @@ nav {
     }
 }
 
-/* Subtitle & CTA (unchanged) */
+/* Subtitle & CTA  */
 .subtitle {
     margin: 1rem 0 2rem;
     font-size: 1.2rem;
@@ -247,7 +246,15 @@ nav {
 }
 
 .stat-item img {
-    width: 10rem;
+    width: 15rem;
+    transition: all 0.3s ease-in;
+    border-radius: 35px;
+}
+
+.stat-item img:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    background: #333;
 }
 
 .stat-number {
@@ -380,6 +387,7 @@ nav {
 }
 
 /* About Section */
+/* 
 .about {
     padding: 100px 0;
     background: white;
@@ -429,9 +437,9 @@ nav {
 .feature-item:hover {
     background: #fff8dc;
     transform: translateX(5px);
-}
+} */
 
-.feature-icon {
+/* .feature-icon {
     font-size: 2rem;
     color: #ffce07;
 }
@@ -460,10 +468,10 @@ nav {
     50% {
         transform: scale(1.05);
     }
-}
+} */
 
 /* Testimonials */
-.testimonials {
+/* .testimonials {
     padding: 100px 0;
     background: linear-gradient(135deg, #ffce07, #ffd700);
     color: black;
@@ -579,10 +587,13 @@ nav {
     width: 30px;
 }
 
+*/
+
 /* Achavement */
 .achievements {
     text-align: center;
     background-color: #f4f6f7;
+    /* background: linear-gradient(135deg, #ffce07, #ffd700); */
     padding: 3rem 1rem;
 }
 
