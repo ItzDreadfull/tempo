@@ -20,25 +20,27 @@ document.addEventListener("DOMContentLoaded", () => {
             title: "Doi / Curd.",
             description: "Traditional and healthy curd varieties.",
             products: [
-                { name: "Tradional Misti Doi (Cup)", img: "image/2.png", description: "Sweetened curd in a convenient cup.", nutrition: { Calories: "90 kcal", Protein: "4g", Fat: "2.5g" }, ingredients: ["Milk", "Sugar", "Live Cultures"], useages: ["As a dessert", "Side dish"] },
-                { name: "Tradional Tok Doi (Pouch)", img: "image/2.png", description: "Classic sour curd in a pouch.", nutrition: { Calories: "65 kcal", Protein: "3.5g", Fat: "3g" }, ingredients: ["Milk", "Live Cultures"], useages: ["Cooking", "Making raita"] },
-                { name: "Sudhi Misti Doi (Cup)", img: "image/2.png", description: "Pure and simple sweet curd.", nutrition: { Calories: "95 kcal", Protein: "4.2g", Fat: "2.8g" }, ingredients: ["Milk", "Sugar", "Live Cultures"], useages: ["Healthy dessert option"] },
-                { name: "Sudhi Tok Doi (Pouch)", img: "image/2.png", description: "Pure sour curd for culinary use.", nutrition: { Calories: "62 kcal", Protein: "3.3g", Fat: "2.9g" }, ingredients: ["Milk", "Live Cultures"], useages: ["Marinades", "Cooking"] },
+                { name: "Tradional Misti Doi (Cup)", img: "image/Doi_Mockup/3.png", description: "Sweetened curd in a convenient cup.", nutrition: { Calories: "90 kcal", Protein: "4g", Fat: "2.5g" }, ingredients: ["Milk", "Sugar", "Live Cultures"], useages: ["As a dessert", "Side dish"] },
+                { name: "Tradional Tok Doi (Pouch)", img: "image/Doi_Mockup/1.png", description: "Classic sour curd in a pouch.", nutrition: { Calories: "65 kcal", Protein: "3.5g", Fat: "3g" }, ingredients: ["Milk", "Live Cultures"], useages: ["Cooking", "Making raita"] },
+                { name: "Sudhi Misti Doi (Cup)", img: "image/Doi_Mockup/4.png", description: "Pure and simple sweet curd.", nutrition: { Calories: "95 kcal", Protein: "4.2g", Fat: "2.8g" }, ingredients: ["Milk", "Sugar", "Live Cultures"], useages: ["Healthy dessert option"] },
+                { name: "Sudhi Tok Doi (Pouch)", img: "image/Doi_Mockup/2.png", description: "Pure sour curd for culinary use.", nutrition: { Calories: "62 kcal", Protein: "3.3g", Fat: "2.9g" }, ingredients: ["Milk", "Live Cultures"], useages: ["Marinades", "Cooking"] },
             ]
         },
         paneer: {
             title: "Paneer.",
             description: "Deliciously soft paneer for cooking.",
             products: [
-                { name: "Malai Paneer", img: "image/1.png", description: "Rich and creamy paneer for special dishes.", nutrition: { Calories: "260 kcal", Protein: "14g", Fat: "22g" }, ingredients: ["Milk", "Citric Acid"], useages: ["Shahi Paneer", "Paneer Butter Masala"] },
-                { name: "Lite Paneer", img: "image/4.png", description: "Low-fat paneer with a smooth texture.", nutrition: { Calories: "150 kcal", Protein: "18g", Fat: "8g" }, ingredients: ["Skimmed Milk", "Lactic Acid"], useages: ["Salads", "Grilling", "Healthy snacks"] },
+                { name: "Malai Paneer", img: "image/Paneer_Mockup/1.png", description: "Rich and creamy paneer for special dishes.", nutrition: { Calories: "260 kcal", Protein: "14g", Fat: "22g" }, ingredients: ["Milk", "Citric Acid"], useages: ["Shahi Paneer", "Paneer Butter Masala"] },
+                { name: "Lite Paneer", img: "image/Paneer_Mockup/2.png", description: "Low-fat paneer with a smooth texture.", nutrition: { Calories: "150 kcal", Protein: "18g", Fat: "8g" }, ingredients: ["Skimmed Milk", "Lactic Acid"], useages: ["Salads", "Grilling", "Healthy snacks"] },
+                { name: "Receipe Paneer", img: "image/Paneer_Mockup/3.png", description: "Low-fat paneer with a smooth texture.", nutrition: { Calories: "150 kcal", Protein: "18g", Fat: "8g" }, ingredients: ["Skimmed Milk", "Lactic Acid"], useages: ["Salads", "Grilling", "Healthy snacks"] },
+                { name: "Qube Paneer (cup)", img: "image/Paneer_Mockup/4.png", description: "Low-fat paneer with a smooth texture.", nutrition: { Calories: "150 kcal", Protein: "18g", Fat: "8g" }, ingredients: ["Skimmed Milk", "Lactic Acid"], useages: ["Salads", "Grilling", "Healthy snacks"] },
             ]
         },
         Dairy_Baverage: {
             title: "Dairy Beverages.",
             description: "Refreshing and nutritious dairy drinks.",
             products: [
-                { name: "Sweet Lassi", img: "image/1.png", description: "A refreshing sweet yogurt-based drink.", nutrition: { Calories: "120 kcal", Protein: "4g", Fat: "2g" }, ingredients: ["Curd", "Sugar", "Water"], useages: ["Summer cooler", "With meals"] },
+                { name: "Sweet Lassi", img: "image/Lassi_Mockup/13.png", description: "A refreshing sweet yogurt-based drink.", nutrition: { Calories: "120 kcal", Protein: "4g", Fat: "2g" }, ingredients: ["Curd", "Sugar", "Water"], useages: ["Summer cooler", "With meals"] },
                 { name: "Butter Milk (Chaas)", img: "image/4.png", description: "Spiced buttermilk, perfect for digestion.", nutrition: { Calories: "40 kcal", Protein: "2g", Fat: "1.5g" }, ingredients: ["Curd", "Water", "Spices", "Herbs"], useages: ["Digestive aid", "After-meal drink"] },
             ]
         },
@@ -46,8 +48,9 @@ document.addEventListener("DOMContentLoaded", () => {
             title: "Ghee & Cream.",
             description: "Pure ghee and fresh cream for rich flavor.",
             products: [
-                { name: "Cow Desi Ghee", img: "image/1.png", description: "Pure and aromatic ghee made from cow's milk.", nutrition: { "Energy (per 100g)": "900 kcal", "Total Fat": "100g" }, ingredients: ["Milk Fat"], useages: ["Cooking", "Frying", "Religious ceremonies"] },
-                { name: "Fresh Cream", img: "image/4.png", description: "Thick and fresh cream for desserts and gravies.", nutrition: { "Energy (per 100g)": "292 kcal", "Total Fat": "25g" }, ingredients: ["Milk Cream"], useages: ["Thickening gravies", "Garnishing desserts", "Fruit salads"] },
+                { name: "Desi Ghee (Cow Milk)", img: "image/Ghee_Mockup/1.png", description: "Pure and aromatic ghee made from cow's milk.", nutrition: { "Energy (per 100g)": "900 kcal", "Total Fat": "100g" }, ingredients: ["Milk Fat"], useages: ["Cooking", "Frying", "Religious ceremonies"] },
+                { name: "Receipe Ghee", img: "image/Ghee_Mockup/2.png", description: "Pure and aromatic ghee made from cow's milk.", nutrition: { "Energy (per 100g)": "900 kcal", "Total Fat": "100g" }, ingredients: ["Milk Fat"], useages: ["Cooking", "Frying", "Religious ceremonies"] },
+                { name: "Fresh Cream", img: "image/Ghee_Mockup/3.png", description: "Thick and fresh cream for desserts and gravies.", nutrition: { "Energy (per 100g)": "292 kcal", "Total Fat": "25g" }, ingredients: ["Milk Cream"], useages: ["Thickening gravies", "Garnishing desserts", "Fruit salads"] },
             ]
         },
     };
@@ -62,7 +65,7 @@ document.addEventListener("DOMContentLoaded", () => {
             const category = data[key];
             let section = document.createElement("section");
             section.innerHTML = `
-    <h2 class="section-title">${category.title}</h2>
+    <h3 class="section-title">${category.title}</h3>
     <p class="section-subtitle section-desc">${category.description}</p>
     <div class="products-grid"></div>
     `;
@@ -157,6 +160,7 @@ document.addEventListener("DOMContentLoaded", () => {
     window.backToCategories = function () {
         document.getElementById("categoriesContainer").style.display = "block";
         document.getElementById("detailsPage").classList.remove("active");
+        renderCategories();
     }
 
     // Initial render of the page
