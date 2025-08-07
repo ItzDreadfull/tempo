@@ -7,227 +7,139 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="cat.css">
     <title>Unimi - Premium Farm Fresh Products</title>
+
 </head>
 
 <body>
+    <header>
+        <nav class="container">
+            <div class="logo"><a href="index.html">
+                    <img src="./Unimi_logo.jpg" alt="Logo"></a>
+            </div>
+            <ul class="nav-links">
 
-    <body>
-        <header>
-            <nav class="container">
-                <div class="logo"><a href="index.html">
-                        <img src="./Unimi_logo.jpg" alt="Logo"></a>
-                </div>
-                <ul class="nav-links">
-                    <!-- <li><a href="#home">Home</a></li> -->
-                    <li><a href="#categories">Products</a></li>
-                    <li><a href="Partner.html">Be Our Partner</a></li>
-                    <li><a href="#about">About</a></li>
-                    <!-- <li><a href="#contact">Contact</a></li> -->
-                </ul>
-            </nav>
-        </header>
+                <li><a href="#categories">Products</a></li>
+                <li><a href="Partner.html">Be Our Partner</a></li>
+                <li><a href="#about">About</a></li>
 
-        <div class="page-content">
-            <!-- Home Page -->
+            </ul>
+        </nav>
+    </header>
 
-            <!-- Product Categories Page -->
-            <div id="categories" class="page active">
-                <section class="categories-section">
-                    <div class="container">
-                        <h2 class="section-title">Product Categories</h2>
-                        <p class="section-subtitle">Explore our premium dairy product categories, each crafted with care
-                            and tradition.</p>
-                        <div class="categories-grid">
-                            <div class="category-card" onclick="showCategoryProducts('milk')">
-                                <div class="category-icon">🥛</div>
-                                <h3>Fresh Milk</h3>
-                                <p>Pure, creamy milk from grass-fed cows. Available in whole, 2%, 1%, and skim
-                                    varieties.</p>
-                                <div class="product-count">4 Products</div>
+    <!-- Home Page -->
+
+    <!-- Product Categories Page -->
+    <div id="categories" class="">
+        <section class="categories-section">
+            <div class="container-cat">
+                <!-- <h2 class="section-title">Milk</h2> -->
+
+                <div id="categoriesContainer"></div>
+                <div id="detailsPage" class="details-page">
+                    <button class="back-button" onclick="backToCategories()">← Back</button>
+                    <div class="details-header">
+                        <img id="productImage" src="" alt="">
+                        <div class="details-info">
+                            <h2 id="productName"></h2>
+                            <p id="productDescription"></p>
+                            <div class="toggle-buttons">
+                                <button id="nutritionBtn" onclick="showNutrition()">Nutrition value</button>
+                                <button id="ingredientsBtn" onclick="showIngredients()">Ingredients</button>
+                                <button id="useagesBtn" onclick="showUseages()">Useages</button>
                             </div>
-                            <div class="category-card" onclick="showCategoryProducts('cheese')">
-                                <div class="category-icon">🧀</div>
-                                <h3>Artisan Cheese</h3>
-                                <p>Hand-crafted aged cheeses with complex flavors. From mild cheddar to sharp aged
-                                    varieties.</p>
-                                <div class="product-count">6 Products</div>
-                            </div>
-                            <div class="category-card" onclick="showCategoryProducts('butter')">
-                                <div class="category-icon">🧈</div>
-                                <h3>Butter & Cream</h3>
-                                <p>Rich, creamy butter and heavy cream perfect for cooking, baking, and everyday use.
-                                </p>
-                                <div class="product-count">3 Products</div>
-                            </div>
-                            <div class="category-card" onclick="showCategoryProducts('yogurt')">
-                                <div class="category-icon">🥤</div>
-                                <h3>Yogurt & Probiotics</h3>
-                                <p>Healthy yogurt packed with probiotics. Greek, regular, and flavored varieties
-                                    available.</p>
-                                <div class="product-count">5 Products</div>
-                            </div>
-                            <div class="category-card" onclick="showCategoryProducts('icecream')">
-                                <div class="category-icon">🍦</div>
-                                <h3>Ice Cream</h3>
-                                <p>Premium ice cream made with our fresh cream. Seasonal and classic flavors.</p>
-                                <div class="product-count">8 Products</div>
-                            </div>
-                            <div class="category-card" onclick="showCategoryProducts('specialty')">
-                                <div class="category-icon">🍼</div>
-                                <h3>Specialty Items</h3>
-                                <p>Unique dairy products including buttermilk, sour cream, and seasonal specialties.</p>
-                                <div class="product-count">4 Products</div>
-                            </div>
+                            <div class="nutrition-facts proDitlsPage" id="nutritions"></div>
+                            <div class="nutrition-facts proDitlsPage" id="ingredients"></div>
+                            <div class="nutrition-facts proDitlsPage" id="useages"></div>
                         </div>
                     </div>
-                </section>
-            </div>
 
-            <!-- Category Products Page -->
-            <div id="categoryProducts" class="page">
-                <div class="category-header">
-                    <div class="container">
-                        <h1 id="categoryTitle">Category Products</h1>
-                        <p id="categoryDescription">Discover our premium products in this category</p>
-                    </div>
-                </div>
-                <div class="container">
-                    <button class="back-button" onclick="showPage('categories')">← Back to Categories</button>
-                    <div class="products-grid" id="productsGrid">
-                        <!-- Products will be loaded here dynamically -->
-                    </div>
-                </div>
-            </div>
-
-            <!-- Product Details Page -->
-            <div id="productDetails" class="page">
-                <div class="container">
-                    <div class="product-details">
-                        <button class="back-button" onclick="goBackToCategory()">← Back to Products</button>
-                        <div class="product-details-container">
-                            <div class="product-image-large">
-                                <div class="product-icon" id="productIcon">🥛</div>
-                            </div>
-                            <div class="product-info">
-                                <h1 id="productName">Product Name</h1>
-                                <div class="product-price-large" id="productPrice">$0.00</div>
-                                <div class="product-description-full" id="productDescriptionFull">
-                                    Product description will appear here.
-                                </div>
-
-                                <div class="quantity-selector">
-                                    <span>Quantity:</span>
-                                    <button class="quantity-btn" onclick="changeQuantity(-1)">-</button>
-                                    <span class="quantity-display" id="quantity">1</span>
-                                    <button class="quantity-btn" onclick="changeQuantity(1)">+</button>
-                                </div>
-
-                                <div class="product-actions">
-                                    <button class="add-to-cart-btn" onclick="addToCart()">Add to Cart</button>
-                                </div>
-
-                                <div class="nutrition-facts">
-                                    <div class="nutrition-title">Nutrition Facts</div>
-                                    <div class="nutrition-item">
-                                        <span class="nutrition-label">Serving Size</span>
-                                        <span class="nutrition-value" id="servingSize">1 cup (240ml)</span>
-                                    </div>
-                                    <div class="nutrition-item">
-                                        <span class="nutrition-label">Calories</span>
-                                        <span class="nutrition-value" id="calories">150</span>
-                                    </div>
-                                    <div class="nutrition-item">
-                                        <span class="nutrition-label">Total Fat</span>
-                                        <span class="nutrition-value" id="totalFat">8g</span>
-                                    </div>
-                                    <div class="nutrition-item">
-                                        <span class="nutrition-label">Saturated Fat</span>
-                                        <span class="nutrition-value" id="saturatedFat">5g</span>
-                                    </div>
-                                    <div class="nutrition-item">
-                                        <span class="nutrition-label">Cholesterol</span>
-                                        <span class="nutrition-value" id="cholesterol">30mg</span>
-                                    </div>
-                                    <div class="nutrition-item">
-                                        <span class="nutrition-label">Sodium</span>
-                                        <span class="nutrition-value" id="sodium">120mg</span>
-                                    </div>
-                                    <div class="nutrition-item">
-                                        <span class="nutrition-label">Total Carbohydrates</span>
-                                        <span class="nutrition-value" id="carbs">12g</span>
-                                    </div>
-                                    <div class="nutrition-item">
-                                        <span class="nutrition-label">Protein</span>
-                                        <span class="nutrition-value" id="protein">8g</span>
-                                    </div>
-                                    <div class="nutrition-item">
-                                        <span class="nutrition-label">Calcium</span>
-                                        <span class="nutrition-value" id="calcium">300mg</span>
-                                    </div>
-                                    <div class="nutrition-item">
-                                        <span class="nutrition-label">Vitamin D</span>
-                                        <span class="nutrition-value" id="vitaminD">120IU</span>
-                                    </div>
-                                </div>
-                            </div>
+                    <!-- bottom table -->
+                    <div class="details-table">
+                        <div class="table-row table-header">
+                            <div>Status</div>
+                            <div>Variant</div>
+                            <div>Pack Size</div>
+                            <div>Pack Type</div>
+                            <div>M.R.P.</div>
+                        </div>
+                        <div class="table-row">
+                            <div>Available</div>
+                            <div>Full Cream</div>
+                            <div>500 ml</div>
+                            <div>Pouch</div>
+                            <div>₹30</div>
+                        </div>
+                        <div class="table-row">
+                            <div>Out of Stock</div>
+                            <div>Toned</div>
+                            <div>1 L</div>
+                            <div>Carton</div>
+                            <div>₹60</div>
+                        </div>
+                        <div class="table-row">
+                            <div>Out of Stock</div>
+                            <div>Toned</div>
+                            <div>1 L</div>
+                            <div>Carton</div>
+                            <div>₹60</div>
                         </div>
                     </div>
+
+
+
                 </div>
             </div>
 
+        </section>
+    </div>
 
+
+    <footer>
+        <!-- 1. Logo at top center -->
+        <div class="footer-top-logo">
+            <div class="logo-pill">
+                <img src="Unimi_logo.jpg" alt="Unimi Logo" title="Unimi Logo" />
+            </div>
+        </div>
+
+        <!-- 2. Main footer columns -->
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Unimi Care</h3>
+                <p>General query</p>
+                <p>📞 1800-102-4774 (Toll Free)</p>
+                <p>📧 care@unimi.in</p>
+                <p>Consumer Support</p>
+                <p>📞 087-9120-9120</p>
+                <p>Partner Support</p>
+                <p>📞 087-9130-9130</p>
+            </div>
+            <div class="footer-section">
+                <h3>Company Details</h3>
+                <p><a href="#about">About Us</a></p>
+                <p><a href="#contact">Contact Us</a></p>
+
+            </div>
+            <div class="footer-section">
+                <h3>Quick Link</h3>
+                <p><a href="#terms">Term & Conditions</a></p>
+                <p><a href="#privacy">Privacy Policy</a></p>
+                <p><a href="#faq">F.A.Q.</a></p>
+            </div>
         </div>
 
 
-
-        <footer>
-            <!-- 1. Logo at top center -->
-            <div class="footer-top-logo">
-                <div class="logo-pill">
-                    <img src="Unimi_logo.jpg" alt="Unimi Logo" title="Unimi Logo" />
-                </div>
+        <!-- 3. Bottom bar -->
+        <div class="footer-bottom">
+            <p>&copy; 2024 &amp; All rights reserved : Unimi Verse Pvt. Ltd.</p>
+            <div class="credit">
+                <p style="text-align: right;">Powered by <a href="#" target="_blank" rel="noopener">ItzDreadfull
+                        Industries</a></p>
             </div>
+        </div>
+    </footer>
+    <script src="cat.js"></script>
 
-            <!-- 2. Main footer columns -->
-            <div class="footer-content">
-                <div class="footer-section">
-                    <h3>Unimi Care</h3>
-                    <p>General query</p>
-                    <p>📞 1800-102-4774 (Toll Free)</p>
-                    <p>📧 care@unimi.in</p>
-                    <p>Consumer Support</p>
-                    <p>📞 087-9120-9120</p>
-                    <p>Partner Support</p>
-                    <p>📞 087-9130-9130</p>
-                </div>
-                <div class="footer-section">
-                    <h3>Company Details</h3>
-                    <p><a href="#about">About Us</a></p>
-                    <p><a href="#contact">Contact Us</a></p>
-                    <!-- <p><a href="#retail">Retail Outlet</a></p>
-                <p><a href="#blog">Blog</a></p> -->
-                </div>
-                <div class="footer-section">
-                    <h3>Quick Link</h3>
-                    <p><a href="#terms">Term & Conditions</a></p>
-                    <p><a href="#privacy">Privacy Policy</a></p>
-                    <p><a href="#faq">F.A.Q.</a></p>
-                </div>
-            </div>
-
-
-            <!-- 3. Bottom bar -->
-            <div class="footer-bottom">
-                <p>&copy; 2024 &amp; All rights reserved : Unimi Verse Pvt. Ltd.</p>
-                <div class="credit">
-                    <p style="text-align: right;">Powered by <a href="#" target="_blank" rel="noopener">ItzDreadfull
-                            Industries</a></p>
-                </div>
-            </div>
-        </footer>
-
-        <script src="cat.js"></script>
-        <script src="script.js"></script>
-    </body>
+</body>
 
 </html>
