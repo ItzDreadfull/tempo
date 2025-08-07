@@ -92,7 +92,7 @@ document.addEventListener("DOMContentLoaded", () => {
         loadUseages();
 
         // By default, show the nutrition tab first
-        showNutrition();
+        // showNutrition();
 
         // Hide categories and show the details page
         document.getElementById("categoriesContainer").style.display = "none";
